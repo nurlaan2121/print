@@ -1,6 +1,7 @@
 package print.print.dto;
 
 
+import print.print.DateParser;
 import print.print.HelloController;
 
 import java.time.LocalDateTime;
@@ -85,6 +86,19 @@ public class PhotoForLocalSave {
     }
 
     public LocalDateTime getCreatedAtOrig() {
-        return HelloController.parseDateTime(this.createdAt);
+        return DateParser.parseDateTime(this.createdAt);
+    }
+
+    @Override
+    public String toString() {
+        return "PhotoForLocalSave{" +
+                "id=" + id +
+                ", createdAt='" + createdAt + '\'' +
+                ", size='" + size + '\'' +
+                ", imagePath='" + imagePath + '\'' +
+                ", status=" + status +
+                ", userId=" + userId +
+                ", amount=" + amount +
+                '}';
     }
 }
