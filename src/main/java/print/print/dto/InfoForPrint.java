@@ -13,6 +13,7 @@ public class InfoForPrint {
     private String UnSuccessUnknown;
     private String unknown;
     private String email;
+    private String yesterdayLastTimePrint;
 
     public InfoForPrint(String firstTimePrint, String lastTimePrint, String currentTime, String successA4, String successA5, String successA6, String unknown) {
         this.firstTimePrint = firstTimePrint;
@@ -123,6 +124,14 @@ public class InfoForPrint {
         this.email = email;
     }
 
+    public String getYesterdayLastTimePrint() {
+        return yesterdayLastTimePrint;
+    }
+
+    public void setYesterdayLastTimePrint(String yesterdayLastTimePrint) {
+        this.yesterdayLastTimePrint = yesterdayLastTimePrint;
+    }
+
     @Override
     public String toString() {
         return "InfoForPrint{" +
@@ -132,11 +141,13 @@ public class InfoForPrint {
                 ", successA4='" + successA4 + '\'' +
                 ", successA5='" + successA5 + '\'' +
                 ", successA6='" + successA6 + '\'' +
-                ", unknown='" + unknown + '\'' +
                 ", UnSuccessA4='" + UnSuccessA4 + '\'' +
                 ", UnSuccessA5='" + UnSuccessA5 + '\'' +
                 ", UnSuccessA6='" + UnSuccessA6 + '\'' +
                 ", UnSuccessUnknown='" + UnSuccessUnknown + '\'' +
+                ", unknown='" + unknown + '\'' +
+                ", email='" + email + '\'' +
+                ", yesterdayLastTimePrint='" + yesterdayLastTimePrint + '\'' +
                 '}';
     }
 }
